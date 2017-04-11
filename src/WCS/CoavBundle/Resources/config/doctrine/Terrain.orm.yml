@@ -1,0 +1,48 @@
+WCS\CoavBundle\Entity\Terrain:
+    type: entity
+    table: terrain
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        name:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        icao:
+            type: string
+            nullable: false
+            length: 4
+            options:
+                fixed: false
+        latitude:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+        longitude:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+        city:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        country:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+    lifecycleCallbacks: {  }
